@@ -2,7 +2,7 @@ import { RowDataPacket, ResultSetHeader } from 'mysql2';
 import mysql from './connection';
 import { IProduct } from '../Interfaces/IProduct';
 
-export default class UserModel {
+export default class ProductModel {
   public connection = mysql;
 
   public async create(user: IProduct): Promise<IProduct> {
