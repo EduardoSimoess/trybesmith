@@ -7,4 +7,10 @@ export default class UserService {
   public create(userData: IProduct): Promise<IProduct> {
     return this.user.create(userData);
   }
+
+  public async getAll(): Promise<IProduct[]> {
+    const products = await this.user.getAll();
+    return products;
+    // return this.user.getAll();
+  }
 }
